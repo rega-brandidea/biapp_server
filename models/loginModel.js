@@ -23,8 +23,8 @@ const login = async (username,password) => {
                 expiresIn: process.env.JWT_EXPIRES_IN || '1h',
               });
             message.status='true';
-            message.message='Login successfully';
-            message.data = {
+            message.message=' Login successfully';
+            message.data = { 
                 user: payload,
                 token: token,
               };
